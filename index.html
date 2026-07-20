@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basaMk — маркетинг YouTube и дизайн</title>
+  <meta name="description" content="basaMk — личный бренд Таймураза. Ведение YouTube-каналов, дизайн превью и афиш, ИИ-контент и лендинги для брендов, которым нужен свой дизайнер.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-gradient-layer" id="bg-gradient"></div>
+  <div class="bg-gradient-noise"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Перейти на первый экран">
+        <img src="assets/logo-star.png" alt="Логотип basaMk в виде звезды">
+      </a>
+
+      <button class="mobile-toggle" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#cases" data-i18n="nav-cases-ru" data-section="cases">Кейсы</a></li>
+          <li><a href="#cases" class="hidden" data-i18n="nav-cases-en" data-section="cases">Cases</a></li>
+
+          <li><a href="#about" data-i18n="nav-about-ru" data-section="about">Обо мне</a></li>
+          <li><a href="#about" class="hidden" data-i18n="nav-about-en" data-section="about">About me</a></li>
+
+          <li><a href="#services" data-i18n="nav-services-ru" data-section="services">Чем я занимаюсь</a></li>
+          <li><a href="#services" class="hidden" data-i18n="nav-services-en" data-section="services">Services</a></li>
+
+          <li><a href="#faq" data-i18n="nav-faq-ru" data-section="faq">FAQ</a></li>
+          <li><a href="#faq" class="hidden" data-i18n="nav-faq-en" data-section="faq">FAQ</a></li>
+
+          <li><a href="#contacts" data-i18n="nav-contacts-ru" data-section="contacts">Контакты</a></li>
+          <li><a href="#contacts" class="hidden" data-i18n="nav-contacts-en" data-section="contacts">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Выбор языка">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="https://t.me/taymurazz" class="btn btn-primary" target="_blank" rel="noopener">
+          <span data-i18n="header-cta-ru">Написать</span>
+          <span class="hidden" data-i18n="header-cta-en">Contact now</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-scroll">
+    <!-- Hero -->
+    <section id="hero" class="hero section snap-section reveal" data-section="hero">
+      <div class="container hero-inner">
+        <article class="hero-content">
+          <h1 class="hero-title" data-i18n="hero-title-ru">
+            YouTube и визуал, который хочется смотреть
+          </h1>
+          <h1 class="hero-title hidden" data-i18n="hero-title-en">
+            YouTube & visuals people want to watch
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero-subtitle-ru">
+            Я — Таймураз. Собираю каналы и визуал так, чтобы твой контент выглядел статусно и читался с первых секунд.
+          </p>
+          <p class="hero-subtitle hidden" data-i18n="hero-subtitle-en">
+            I’m Taymuraz. I shape channels and visuals so your content feels elevated and clear at first glance.
+          </p>
+
+          <div class="hero-tags"></div>
+
+          <div class="hero-actions">
+            <a href="https://t.me/taymurazz" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+              <span data-i18n="hero-cta-main-ru">Написать</span>
+              <span class="hidden" data-i18n="hero-cta-main-en">Contact</span>
+            </a>
+            <a href="#cases" class="btn btn-outline btn-large">
+              <span data-i18n="hero-cta-secondary-ru">Кейсы</span>
+              <span class="hidden" data-i18n="hero-cta-secondary-en">Cases</span>
+            </a>
+          </div>
+        </article>
+
+        <aside class="hero-visual">
+          <div class="hero-avatar parallax">
+            <img src="assets/3d-avatar.png" alt="3D-персонаж, представляющий Таймураза">
+          </div>
+          <div class="hero-badge">
+            <span>личный бренд</span>
+            <span>маркетинг + дизайн</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Process videos (3 авто‑видео, без текста) -->
+    <section id="process" class="section process snap-section reveal" data-section="process">
+      <div class="container">
+        <div class="process-grid">
+          <div class="process-item">
+            <video
+              class="process-video"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              controlslist="nodownload noplaybackrate noremoteplayback"
+            >
+              <source src="assets/videos/process-1.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+
+          <div class="process-item">
+            <video
+              class="process-video"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              controlslist="nodownload noplaybackrate noremoteplayback"
+            >
+              <source src="assets/videos/process-2.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+
+          <div class="process-item">
+            <video
+              class="process-video"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              controlslist="nodownload noplaybackrate noremoteplayback"
+            >
+              <source src="assets/videos/process-3.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section id="cases" class="section cases snap-section reveal" data-section="cases">
+      <div class="cases-bg-animated"></div>
+
+      <div class="container">
+        <header class="section-header">
+          <h2 data-i18n="cases-title-ru">Кейсы</h2>
+          <h2 class="hidden" data-i18n="cases-title-en">Cases</h2>
+          <p data-i18n="cases-subtitle-ru">
+            Психология, мероприятия и подкасты. Я собрал лишь часть кейсов, остальное на яндекс диске.
+          </p>
+          <p class="hidden" data-i18n="cases-subtitle-en">
+            Psychology, events and podcasts. I just chose a few cases, others on my ya disk below.
+          </p>
+        </header>
+
+        <div class="cases-tabs" role="tablist" aria-label="Клиенты кейсов">
+          
+          <button class="case-tab" data-client="alena" role="tab">
+            Алёна Алиджик
+          </button>
+          <button class="case-tab" data-client="mikhail" role="tab">
+            Михаил Николенко
+          </button>
+          <button class="case-tab" data-client="ruslan" role="tab">
+            Руслан Кононюк
+          </button>
+        
+        </div>
+
+        <div class="cases-panels">
+          <div class="case-panel" data-client="qurt">
+            <div class="case-panel-inner">
+              <img src="assets/cases/qurt-by-ari.png" alt="Работы для Qurt by Ari">
+            </div>
+          </div>
+
+          <div class="case-panel" data-client="carbase">
+            <div class="case-panel-inner">
+              <img src="assets/cases/carbase.png" alt="Работы для CarBase">
+            </div>
+          </div>
+
+          <div class="case-panel active" data-client="alena">
+            <div class="case-panel-inner">
+              <img src="assets/cases/alena-alidzhik.png" alt="Работы для Алёны Алиджик">
+            </div>
+          </div>
+
+          <div class="case-panel" data-client="ruslan">
+            <div class="case-panel-inner">
+              <img src="assets/cases/ruslan-kononyuk.png" alt="Работы для Руслана Кононюка">
+            </div>
+          </div>
+
+          <div class="case-panel" data-client="mikhail">
+            <div class="case-panel-inner">
+              <img src="assets/cases/mikhail-nikolenco-rutube.png" alt="Работы для Михаила Николенко">
+            </div>
+          </div>
+        </div>
+
+        <div class="cases-action reveal">
+          <a href="https://disk.yandex.ru/d/9R1zRKHmKjNR7A" class="btn btn-outline btn-large">
+            <span data-i18n="cases-cta-ru">Все кейсы на Yandex Disk</span>
+            <span class="hidden" data-i18n="cases-cta-en">All cases on Yandex Disk</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about snap-section reveal" data-section="about">
+      <div class="container about-inner">
+        <article>
+          <header class="section-header">
+            <h2 data-i18n="about-title-ru">Обо мне</h2>
+            <h2 class="hidden" data-i18n="about-title-en">About me</h2>
+          </header>
+
+          <p data-i18n="about-text-1-ru">
+            Я — Таймураз. Работаю удалённо как гибрид: маркетолог YouTube и дизайнер визуала.
+          </p>
+          <p class="hidden" data-i18n="about-text-1-en">
+            I’m Taymuraz. I work remotely as a hybrid: YouTube marketer and designer of visuals.
+          </p>
+
+          <p data-i18n="about-text-2-ru">
+            Мне интересно долгосрочное и взаимовыгодное сотрудничество.
+          </p>
+          <p class="hidden" data-i18n="about-text-2-en">
+            I'm interested in long and mutually beneficial.
+          </p>
+
+          <p data-i18n="about-text-3-ru">
+            Мой путь в мир фриланса начался с программирования. После мне наскучило и я перешел в дизайн соцсетей, просидел в этой нише почти 3 года. Теперь изучаю маркетинг и углубляюсь в продажи через визуал.
+          </p>
+          <p class="hidden" data-i18n="about-text-3-en">
+            My journey into the world of freelancing started with programming. After I got bored, I moved to social media design, and I spent almost 3 years in this niche. Now I'm studying marketing and delving into visual sales.
+          </p>
+
+          <div class="tools-stack">
+            <h3 class="tools-title" data-i18n="tools-title-ru">Инструменты</h3>
+            <h3 class="tools-title hidden" data-i18n="tools-title-en">Tools</h3>
+
+            <p class="tools-subtitle" data-i18n="tools-subtitle-ru">
+              Часть того, чем я пользуюсь каждый день.
+            </p>
+            <p class="tools-subtitle hidden" data-i18n="tools-subtitle-en">
+              What I use every day.
+            </p>
+
+            <div class="tools-grid">
+              <button class="tool-pill" type="button">
+                <span class="tool-icon">F</span>
+                <span class="tool-label">Figma</span>
+              </button>
+              <button class="tool-pill" type="button">
+                <span class="tool-icon">Ps</span>
+                <span class="tool-label">Photoshop</span>
+              </button>
+              <button class="tool-pill" type="button">
+                <span class="tool-icon">C</span>
+                <span class="tool-label">CapCut</span>
+              </button>
+              <button class="tool-pill" type="button">
+                <span class="tool-icon">AI</span>
+                <span class="tool-label">ИИ-инструменты</span>
+              </button>
+              <button class="tool-pill" type="button">
+                <span class="tool-icon">YT</span>
+                <span class="tool-label">YouTube&nbsp;Studio</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <aside class="about-visual">
+          <img src="assets/3d-avatar-about.png" alt="3D-персонаж, символизирующий автора сайта basaMk">
+        </aside>
+      </div>
+
+      <div class="container about-videos reveal">
+        <h3 class="about-videos-title" data-i18n="about-videos-title-ru">
+          *Полезные видео {скоро}
+        </h3>
+        <h3 class="about-videos-title hidden" data-i18n="about-videos-title-en">
+          *Useful videos (soon)
+        </h3>
+
+        <p class="about-videos-subtitle" data-i18n="about-videos-subtitle-ru">
+          Ниже представлены видео моего YouTube-канала.
+        </p>
+        <p class="about-videos-subtitle hidden" data-i18n="about-videos-subtitle-en">
+          Below are the videos of my YouTube-channel.
+        </p>
+
+        <div class="about-videos-grid">
+          <div class="video-card reveal" id="video-youtube">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_1"
+                title="title"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="video-caption" data-i18n="about-video1-caption-ru">
+              заголовок.
+            </p>
+            <p class="video-caption hidden" data-i18n="about-video1-caption-en">
+              title.
+            </p>
+          </div>
+
+          <div class="video-card reveal" id="video-landing">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_2"
+                title="title"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="video-caption" data-i18n="about-video2-caption-ru">
+              заголовок 2.
+            </p>
+            <p class="video-caption hidden" data-i18n="about-video2-caption-en">
+              title 2.
+            </p>
+          </div>
+
+          
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services snap-section reveal" data-section="services">
+      <div class="container">
+        <header class="section-header">
+          <h2 data-i18n="services-title-ru">Чем я занимаюсь</h2>
+          <h2 class="hidden" data-i18n="services-title-en">What I do</h2>
+          <p data-i18n="services-subtitle-ru">
+            Ниже — задачи, которые я могу решить.
+          </p>
+          <p class="hidden" data-i18n="services-subtitle-en">
+            Below — tasks I can help with.
+          </p>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card service-card--top reveal">
+            <h3 data-i18n="service-youtube-title-ru">Ведение YouTube-канала</h3>
+            <h3 class="hidden" data-i18n="service-youtube-title-en">YouTube channel management</h3>
+            <div class="service-media">
+              <img src="assets/services/youtube-main.png" alt="Работы по ведению YouTube-каналов">
+            </div>
+          </article>
+
+          <article class="service-card service-card--top reveal">
+            <h3 data-i18n="service-own-designer-title-ru">«Свой» дизайнер</h3>
+            <h3 class="hidden" data-i18n="service-own-designer-title-en">In‑house designer</h3>
+            <div class="service-media">
+              <img src="assets/services/own-designer.png" alt="Примеры регулярных задач по дизайну">
+            </div>
+          </article>
+
+          <article class="service-card service-card--top reveal">
+            <h3 data-i18n="service-landing-title-ru">Лендинги</h3>
+            <h3 class="hidden" data-i18n="service-landing-title-en">Landings</h3>
+            <div class="service-media">
+              <img src="assets/services/landings.png" alt="Примеры лендинг-сайтов">
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <h3 data-i18n="service-ai-title-ru">ИИ-контент</h3>
+            <h3 class="hidden" data-i18n="service-ai-title-en">AI content</h3>
+            <div class="service-media service-media--small">
+              <img src="assets/services/ai.png" alt="Примеры ИИ-контента">
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <h3 data-i18n="service-thumbs-title-ru">Превью</h3>
+            <h3 class="hidden" data-i18n="service-thumbs-title-en">Thumbnails</h3>
+            <div class="service-media service-media--small">
+              <img src="assets/services/thumbs.png" alt="Подборка превью">
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <h3 data-i18n="service-poster-title-ru">Афиши и креативы</h3>
+            <h3 class="hidden" data-i18n="service-poster-title-en">Posters & creatives</h3>
+            <div class="service-media service-media--small">
+              <img src="assets/services/posters.png" alt="Примеры афиш и креативов">
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <h3 data-i18n="service-card-title-ru">Карточки объявлений</h3>
+            <h3 class="hidden" data-i18n="service-card-title-en">Announcement cards</h3>
+            <div class="service-media service-media--small">
+              <img src="assets/services/cards.png" alt="Карточки объявлений">
+            </div>
+          </article>
+
+          
+
+          <article class="service-card reveal">
+            <h3 data-i18n="service-other-title-ru">Другое</h3>
+            <h3 class="hidden" data-i18n="service-other-title-en">Other</h3>
+            <div class="service-media service-media--small">
+              <img src="assets/services/other.png" alt="Другие визуальные работы">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq snap-section reveal" data-section="faq">
+      <div class="container">
+        <header class="section-header">
+          <h2 data-i18n="faq-title-ru">FAQ</h2>
+          <h2 class="hidden" data-i18n="faq-title-en">FAQ</h2>
+          <p data-i18n="faq-subtitle-ru">
+            Основные ответы до переписки.
+          </p>
+          <p class="hidden" data-i18n="faq-subtitle-en">
+            Key answers before we chat.
+          </p>
+        </header>
+
+        <div class="faq-list" aria-label="Частые вопросы">
+          <article class="faq-item reveal">
+            <button class="faq-question">
+              <span data-i18n="faq-q1-ru">Как стартуем по YouTube-каналу?</span>
+              <span class="hidden" data-i18n="faq-q1-en">How do we start with your channel?</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq-a1-ru">
+                Пишешь в Telegram, скидываешь канал и задачу. Я смотрю визуал и предлагаю первые шаги.
+              </p>
+              <p class="hidden" data-i18n="faq-a1-en">
+                Text me on Telegram, share your channel and goals. I review visuals and suggest first steps.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question">
+              <span data-i18n="faq-q2-ru">Что входит в формат «свой» дизайнер?</span>
+              <span class="hidden" data-i18n="faq-q2-en">What’s in the in‑house format?</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq-a2-ru">
+                Регулярные превью, афиши, карточки, креативы и базовый ИИ‑контент. Я держу стиль и закрываю визуальные задачи.
+              </p>
+              <p class="hidden" data-i18n="faq-a2-en">
+                Regular thumbnails, posters, cards, creatives and basic AI visuals. I keep your style consistent.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question">
+              <span data-i18n="faq-q3-ru">Работаешь только удалённо?</span>
+              <span class="hidden" data-i18n="faq-q3-en">Do you work remotely only?</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq-a3-ru">
+                Да. Мы общаемся онлайн, материалы и кейсы хранятся в облаке.
+              </p>
+              <p class="hidden" data-i18n="faq-a3-en">
+                Yes. We work online, materials and cases live in the cloud.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question">
+              <span data-i18n="faq-q4-ru">Можно обсудить нестандартную задачу?</span>
+              <span class="hidden" data-i18n="faq-q4-en">Can we discuss a non‑standard task?</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq-a4-ru">
+                Да. Описываешь, что нужно, — я предлагаю формат и честно говорю, где могу быть полезен.
+              </p>
+              <p class="hidden" data-i18n="faq-a4-en">
+                Yes. Describe what you need — I’ll propose a format and show how I can help.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="section contacts snap-section reveal" data-section="contacts">
+      <div class="container contacts-inner">
+        <article>
+          <header class="section-header">
+            <h2 data-i18n="contacts-title-ru">Контакты</h2>
+            <h2 class="hidden" data-i18n="contacts-title-en">Contacts</h2>
+          </header>
+
+          <p data-i18n="contacts-text-ru">
+            Хочешь обсудить канал, визуал или лендинг — напиши в личку в Telegram и пришли ссылки на проекты.
+          </p>
+          <p class="hidden" data-i18n="contacts-text-en">
+            Want to discuss your channel, visuals or landing? Text me on Telegram with your project links.
+          </p>
+
+          <div class="contacts-actions">
+            <a href="https://t.me/taymurazz" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+              <span data-i18n="contacts-cta-main-ru">Написать в Telegram (личка)</span>
+              <span class="hidden" data-i18n="contacts-cta-main-en">Text on Telegram (DM)</span>
+            </a>
+            <a href="https://t.me/basamkg" class="btn btn-outline" target="_blank" rel="noopener">
+              <span data-i18n="contacts-cta-channel-ru">Telegram‑канал basaMk</span>
+              <span class="hidden" data-i18n="contacts-cta-channel-en">basaMk Telegram channel</span>
+            </a>
+          </div>
+
+          <ul class="contacts-list">
+            <li>
+              <span>Telegram:</span>
+              <a href="https://t.me/taymurazz" target="_blank" rel="noopener">@taymurazz</a>
+            </li>
+            <li>
+              <span>YouTube:</span>
+              <a href="https://www.youtube.com/@basamkg/videos" target="_blank" rel="noopener">@basamkg</a>
+            </li>
+            <li>
+              <span>Instagram:</span>
+              <a href="https://instagram.com/basamkg" target="_blank" rel="noopener">@basamkg</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#hero" class="logo">
+          <img src="assets/logo-star.png" alt="Логотип basaMk в виде звезды">
+          <span class="logo-text">basaMk</span>
+        </a>
+        <p class="footer-copy">
+          © <span id="year"></span> basaMk — маркетинг и дизайн в соцсетях.
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Навигация в футере">
+        <a href="#cases" data-i18n="nav-cases-ru">Кейсы</a>
+        <a href="#cases" class="hidden" data-i18n="nav-cases-en">Cases</a>
+
+        <a href="#about" data-i18n="nav-about-ru">Обо мне</a>
+        <a href="#about" class="hidden" data-i18n="nav-about-en">About me</a>
+
+        <a href="#services" data-i18n="nav-services-ru">Чем я занимаюсь</a>
+        <a href="#services" class="hidden" data-i18n="nav-services-en">Services</a>
+
+        <a href="#contacts" data-i18n="nav-contacts-ru">Контакты</a>
+        <a href="#contacts" class="hidden" data-i18n="nav-contacts-en">Contacts</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
