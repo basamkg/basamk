@@ -4,25 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>basaMk — маркетинг YouTube и дизайн</title>
-  <meta name="description" content="basaMk — личный бренд Таймураза. Ведение YouTube-каналов, дизайн превью и афиш, ИИ-контент и лендинги для брендов, которым нужен свой дизайнер.">
+  <meta
+    name="description"
+    content="basaMk — личный бренд Таймураза. Ведение YouTube-каналов, дизайн превью и афиш, ИИ-контент и лендинги для брендов, которым нужен свой дизайнер."
+  >
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="bg-gradient-layer" id="bg-gradient"></div>
-  <div class="bg-gradient-noise"></div>
 
   <header class="site-header">
     <div class="container header-inner">
       <a href="#hero" class="logo" aria-label="Перейти на первый экран">
-        <img src="assets/logo-star.png" alt="Логотип basaMk в виде звезды">
+        <img
+          src="assets/logo-star.png"
+          alt="Логотип basaMk в виде звезды"
+          width="70"
+          height="70"
+        >
       </a>
 
-      <button class="mobile-toggle" aria-label="Открыть меню">
+      <button class="mobile-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
         <span></span>
         <span></span>
       </button>
 
-      <nav class="main-nav" aria-label="Основная навигация">
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
         <ul>
           <li><a href="#cases" data-i18n="nav-cases-ru" data-section="cases">Кейсы</a></li>
           <li><a href="#cases" class="hidden" data-i18n="nav-cases-en" data-section="cases">Cases</a></li>
@@ -43,10 +50,10 @@
 
       <div class="header-actions">
         <div class="lang-switch" aria-label="Выбор языка">
-          <button class="lang-btn active" data-lang="ru">RU</button>
-          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="ru" type="button">RU</button>
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
         </div>
-        <a href="https://t.me/taymurazz" class="btn btn-primary" target="_blank" rel="noopener">
+        <a href="https://t.me/taymurazz" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
           <span data-i18n="header-cta-ru">Написать</span>
           <span class="hidden" data-i18n="header-cta-en">Contact now</span>
         </a>
@@ -55,8 +62,7 @@
   </header>
 
   <main class="page-scroll">
-    <!-- Hero -->
-    <section id="hero" class="hero section snap-section reveal" data-section="hero">
+    <section id="hero" class="hero section reveal" data-section="hero">
       <div class="container hero-inner">
         <article class="hero-content">
           <h1 class="hero-title" data-i18n="hero-title-ru">
@@ -76,7 +82,7 @@
           <div class="hero-tags"></div>
 
           <div class="hero-actions">
-            <a href="https://t.me/taymurazz" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+            <a href="https://t.me/taymurazz" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
               <span data-i18n="hero-cta-main-ru">Написать</span>
               <span class="hidden" data-i18n="hero-cta-main-en">Contact</span>
             </a>
@@ -88,8 +94,14 @@
         </article>
 
         <aside class="hero-visual">
-          <div class="hero-avatar parallax">
-            <img src="assets/3d-avatar.png" alt="3D-персонаж, представляющий Таймураза">
+          <div class="hero-avatar">
+            <img
+              src="assets/3d-avatar.png"
+              alt="3D-персонаж, представляющий Таймураза"
+              width="600"
+              height="600"
+              fetchpriority="high"
+            >
           </div>
           <div class="hero-badge">
             <span>личный бренд</span>
@@ -99,62 +111,7 @@
       </div>
     </section>
 
-    <!-- Process videos (3 авто‑видео, без текста) -->
-    <section id="process" class="section process snap-section reveal" data-section="process">
-      <div class="container">
-        <div class="process-grid">
-          <div class="process-item">
-            <video
-              class="process-video"
-              autoplay
-              loop
-              muted
-              playsinline
-              preload="auto"
-              controlslist="nodownload noplaybackrate noremoteplayback"
-            >
-              <source src="assets/videos/process-1.mp4" type="video/mp4">
-              Ваш браузер не поддерживает видео.
-            </video>
-          </div>
-
-          <div class="process-item">
-            <video
-              class="process-video"
-              autoplay
-              loop
-              muted
-              playsinline
-              preload="auto"
-              controlslist="nodownload noplaybackrate noremoteplayback"
-            >
-              <source src="assets/videos/process-2.mp4" type="video/mp4">
-              Ваш браузер не поддерживает видео.
-            </video>
-          </div>
-
-          <div class="process-item">
-            <video
-              class="process-video"
-              autoplay
-              loop
-              muted
-              playsinline
-              preload="auto"
-              controlslist="nodownload noplaybackrate noremoteplayback"
-            >
-              <source src="assets/videos/process-3.mp4" type="video/mp4">
-              Ваш браузер не поддерживает видео.
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cases -->
-    <section id="cases" class="section cases snap-section reveal" data-section="cases">
-      <div class="cases-bg-animated"></div>
-
+    <section id="cases" class="section cases reveal" data-section="cases">
       <div class="container">
         <header class="section-header">
           <h2 data-i18n="cases-title-ru">Кейсы</h2>
@@ -168,53 +125,60 @@
         </header>
 
         <div class="cases-tabs" role="tablist" aria-label="Клиенты кейсов">
-          
-          <button class="case-tab" data-client="alena" role="tab">
+          <button class="case-tab active" data-client="alena" role="tab" type="button" aria-selected="true">
             Алёна Алиджик
           </button>
-          <button class="case-tab" data-client="mikhail" role="tab">
+          <button class="case-tab" data-client="mikhail" role="tab" type="button" aria-selected="false">
             Михаил Николенко
           </button>
-          <button class="case-tab" data-client="ruslan" role="tab">
+          <button class="case-tab" data-client="ruslan" role="tab" type="button" aria-selected="false">
             Руслан Кононюк
           </button>
-        
         </div>
 
         <div class="cases-panels">
-          <div class="case-panel" data-client="qurt">
-            <div class="case-panel-inner">
-              <img src="assets/cases/qurt-by-ari.png" alt="Работы для Qurt by Ari">
-            </div>
-          </div>
-
-          <div class="case-panel" data-client="carbase">
-            <div class="case-panel-inner">
-              <img src="assets/cases/carbase.png" alt="Работы для CarBase">
-            </div>
-          </div>
-
           <div class="case-panel active" data-client="alena">
             <div class="case-panel-inner">
-              <img src="assets/cases/alena-alidzhik.png" alt="Работы для Алёны Алиджик">
+              <img
+                src="assets/cases/alena-alidzhik.png"
+                alt="Работы для Алёны Алиджик"
+                width="1600"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              >
             </div>
           </div>
 
           <div class="case-panel" data-client="ruslan">
             <div class="case-panel-inner">
-              <img src="assets/cases/ruslan-kononyuk.png" alt="Работы для Руслана Кононюка">
+              <img
+                src="assets/cases/ruslan-kononyuk.png"
+                alt="Работы для Руслана Кононюка"
+                width="1600"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              >
             </div>
           </div>
 
           <div class="case-panel" data-client="mikhail">
             <div class="case-panel-inner">
-              <img src="assets/cases/mikhail-nikolenco-rutube.png" alt="Работы для Михаила Николенко">
+              <img
+                src="assets/cases/mikhail-nikolenco-rutube.png"
+                alt="Работы для Михаила Николенко"
+                width="1600"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              >
             </div>
           </div>
         </div>
 
         <div class="cases-action reveal">
-          <a href="https://disk.yandex.ru/d/9R1zRKHmKjNR7A" class="btn btn-outline btn-large">
+          <a href="https://disk.yandex.ru/d/9R1zRKHmKjNR7A" class="btn btn-outline btn-large" target="_blank" rel="noopener noreferrer">
             <span data-i18n="cases-cta-ru">Все кейсы на Yandex Disk</span>
             <span class="hidden" data-i18n="cases-cta-en">All cases on Yandex Disk</span>
           </a>
@@ -222,8 +186,7 @@
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section about snap-section reveal" data-section="about">
+    <section id="about" class="section about reveal" data-section="about">
       <div class="container about-inner">
         <article>
           <header class="section-header">
@@ -264,32 +227,24 @@
             </p>
 
             <div class="tools-grid">
-              <button class="tool-pill" type="button">
-                <span class="tool-icon">F</span>
-                <span class="tool-label">Figma</span>
-              </button>
-              <button class="tool-pill" type="button">
-                <span class="tool-icon">Ps</span>
-                <span class="tool-label">Photoshop</span>
-              </button>
-              <button class="tool-pill" type="button">
-                <span class="tool-icon">C</span>
-                <span class="tool-label">CapCut</span>
-              </button>
-              <button class="tool-pill" type="button">
-                <span class="tool-icon">AI</span>
-                <span class="tool-label">ИИ-инструменты</span>
-              </button>
-              <button class="tool-pill" type="button">
-                <span class="tool-icon">YT</span>
-                <span class="tool-label">YouTube&nbsp;Studio</span>
-              </button>
+              <button class="tool-pill" type="button"><span class="tool-icon">F</span><span class="tool-label">Figma</span></button>
+              <button class="tool-pill" type="button"><span class="tool-icon">Ps</span><span class="tool-label">Photoshop</span></button>
+              <button class="tool-pill" type="button"><span class="tool-icon">C</span><span class="tool-label">CapCut</span></button>
+              <button class="tool-pill" type="button"><span class="tool-icon">AI</span><span class="tool-label">ИИ-инструменты</span></button>
+              <button class="tool-pill" type="button"><span class="tool-icon">YT</span><span class="tool-label">YouTube Studio</span></button>
             </div>
           </div>
         </article>
 
         <aside class="about-visual">
-          <img src="assets/3d-avatar-about.png" alt="3D-персонаж, символизирующий автора сайта basaMk">
+          <img
+            src="assets/3d-avatar-about.png"
+            alt="3D-персонаж, символизирующий автора сайта basaMk"
+            width="700"
+            height="700"
+            loading="lazy"
+            decoding="async"
+          >
         </aside>
       </div>
 
@@ -313,49 +268,36 @@
             <div class="video-frame">
               <iframe
                 src="https://www.youtube.com/embed/VIDEO_ID_1"
-                title="title"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                title="Видео YouTube 1"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
                 loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
-            <p class="video-caption" data-i18n="about-video1-caption-ru">
-              заголовок.
-            </p>
-            <p class="video-caption hidden" data-i18n="about-video1-caption-en">
-              title.
-            </p>
+            <p class="video-caption" data-i18n="about-video1-caption-ru">заголовок.</p>
+            <p class="video-caption hidden" data-i18n="about-video1-caption-en">title.</p>
           </div>
 
           <div class="video-card reveal" id="video-landing">
             <div class="video-frame">
               <iframe
                 src="https://www.youtube.com/embed/VIDEO_ID_2"
-                title="title"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                title="Видео YouTube 2"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
                 loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
-            <p class="video-caption" data-i18n="about-video2-caption-ru">
-              заголовок 2.
-            </p>
-            <p class="video-caption hidden" data-i18n="about-video2-caption-en">
-              title 2.
-            </p>
+            <p class="video-caption" data-i18n="about-video2-caption-ru">заголовок 2.</p>
+            <p class="video-caption hidden" data-i18n="about-video2-caption-en">title 2.</p>
           </div>
-
-          
-
-          
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="section services snap-section reveal" data-section="services">
+    <section id="services" class="section services reveal" data-section="services">
       <div class="container">
         <header class="section-header">
           <h2 data-i18n="services-title-ru">Чем я занимаюсь</h2>
@@ -373,7 +315,7 @@
             <h3 data-i18n="service-youtube-title-ru">Ведение YouTube-канала</h3>
             <h3 class="hidden" data-i18n="service-youtube-title-en">YouTube channel management</h3>
             <div class="service-media">
-              <img src="assets/services/youtube-main.png" alt="Работы по ведению YouTube-каналов">
+              <img src="assets/services/youtube-main.png" alt="Работы по ведению YouTube-каналов" width="800" height="500" loading="lazy" decoding="async">
             </div>
           </article>
 
@@ -381,7 +323,7 @@
             <h3 data-i18n="service-own-designer-title-ru">«Свой» дизайнер</h3>
             <h3 class="hidden" data-i18n="service-own-designer-title-en">In‑house designer</h3>
             <div class="service-media">
-              <img src="assets/services/own-designer.png" alt="Примеры регулярных задач по дизайну">
+              <img src="assets/services/own-designer.png" alt="Примеры регулярных задач по дизайну" width="800" height="500" loading="lazy" decoding="async">
             </div>
           </article>
 
@@ -389,7 +331,7 @@
             <h3 data-i18n="service-landing-title-ru">Лендинги</h3>
             <h3 class="hidden" data-i18n="service-landing-title-en">Landings</h3>
             <div class="service-media">
-              <img src="assets/services/landings.png" alt="Примеры лендинг-сайтов">
+              <img src="assets/services/landings.png" alt="Примеры лендинг-сайтов" width="800" height="500" loading="lazy" decoding="async">
             </div>
           </article>
 
@@ -397,7 +339,7 @@
             <h3 data-i18n="service-ai-title-ru">ИИ-контент</h3>
             <h3 class="hidden" data-i18n="service-ai-title-en">AI content</h3>
             <div class="service-media service-media--small">
-              <img src="assets/services/ai.png" alt="Примеры ИИ-контента">
+              <img src="assets/services/ai.png" alt="Примеры ИИ-контента" width="800" height="420" loading="lazy" decoding="async">
             </div>
           </article>
 
@@ -405,7 +347,7 @@
             <h3 data-i18n="service-thumbs-title-ru">Превью</h3>
             <h3 class="hidden" data-i18n="service-thumbs-title-en">Thumbnails</h3>
             <div class="service-media service-media--small">
-              <img src="assets/services/thumbs.png" alt="Подборка превью">
+              <img src="assets/services/thumbs.png" alt="Подборка превью" width="800" height="420" loading="lazy" decoding="async">
             </div>
           </article>
 
@@ -413,7 +355,7 @@
             <h3 data-i18n="service-poster-title-ru">Афиши и креативы</h3>
             <h3 class="hidden" data-i18n="service-poster-title-en">Posters & creatives</h3>
             <div class="service-media service-media--small">
-              <img src="assets/services/posters.png" alt="Примеры афиш и креативов">
+              <img src="assets/services/posters.png" alt="Примеры афиш и креативов" width="800" height="420" loading="lazy" decoding="async">
             </div>
           </article>
 
@@ -421,25 +363,22 @@
             <h3 data-i18n="service-card-title-ru">Карточки объявлений</h3>
             <h3 class="hidden" data-i18n="service-card-title-en">Announcement cards</h3>
             <div class="service-media service-media--small">
-              <img src="assets/services/cards.png" alt="Карточки объявлений">
+              <img src="assets/services/cards.png" alt="Карточки объявлений" width="800" height="420" loading="lazy" decoding="async">
             </div>
           </article>
-
-          
 
           <article class="service-card reveal">
             <h3 data-i18n="service-other-title-ru">Другое</h3>
             <h3 class="hidden" data-i18n="service-other-title-en">Other</h3>
             <div class="service-media service-media--small">
-              <img src="assets/services/other.png" alt="Другие визуальные работы">
+              <img src="assets/services/other.png" alt="Другие визуальные работы" width="800" height="420" loading="lazy" decoding="async">
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section faq snap-section reveal" data-section="faq">
+    <section id="faq" class="section faq reveal" data-section="faq">
       <div class="container">
         <header class="section-header">
           <h2 data-i18n="faq-title-ru">FAQ</h2>
@@ -454,7 +393,7 @@
 
         <div class="faq-list" aria-label="Частые вопросы">
           <article class="faq-item reveal">
-            <button class="faq-question">
+            <button class="faq-question" type="button">
               <span data-i18n="faq-q1-ru">Как стартуем по YouTube-каналу?</span>
               <span class="hidden" data-i18n="faq-q1-en">How do we start with your channel?</span>
             </button>
@@ -469,7 +408,7 @@
           </article>
 
           <article class="faq-item reveal">
-            <button class="faq-question">
+            <button class="faq-question" type="button">
               <span data-i18n="faq-q2-ru">Что входит в формат «свой» дизайнер?</span>
               <span class="hidden" data-i18n="faq-q2-en">What’s in the in‑house format?</span>
             </button>
@@ -484,7 +423,7 @@
           </article>
 
           <article class="faq-item reveal">
-            <button class="faq-question">
+            <button class="faq-question" type="button">
               <span data-i18n="faq-q3-ru">Работаешь только удалённо?</span>
               <span class="hidden" data-i18n="faq-q3-en">Do you work remotely only?</span>
             </button>
@@ -499,7 +438,7 @@
           </article>
 
           <article class="faq-item reveal">
-            <button class="faq-question">
+            <button class="faq-question" type="button">
               <span data-i18n="faq-q4-ru">Можно обсудить нестандартную задачу?</span>
               <span class="hidden" data-i18n="faq-q4-en">Can we discuss a non‑standard task?</span>
             </button>
@@ -516,8 +455,7 @@
       </div>
     </section>
 
-    <!-- Contacts -->
-    <section id="contacts" class="section contacts snap-section reveal" data-section="contacts">
+    <section id="contacts" class="section contacts reveal" data-section="contacts">
       <div class="container contacts-inner">
         <article>
           <header class="section-header">
@@ -533,11 +471,11 @@
           </p>
 
           <div class="contacts-actions">
-            <a href="https://t.me/taymurazz" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+            <a href="https://t.me/taymurazz" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
               <span data-i18n="contacts-cta-main-ru">Написать в Telegram (личка)</span>
               <span class="hidden" data-i18n="contacts-cta-main-en">Text on Telegram (DM)</span>
             </a>
-            <a href="https://t.me/basamkg" class="btn btn-outline" target="_blank" rel="noopener">
+            <a href="https://t.me/basamkg" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
               <span data-i18n="contacts-cta-channel-ru">Telegram‑канал basaMk</span>
               <span class="hidden" data-i18n="contacts-cta-channel-en">basaMk Telegram channel</span>
             </a>
@@ -546,15 +484,15 @@
           <ul class="contacts-list">
             <li>
               <span>Telegram:</span>
-              <a href="https://t.me/taymurazz" target="_blank" rel="noopener">@taymurazz</a>
+              <a href="https://t.me/taymurazz" target="_blank" rel="noopener noreferrer">@taymurazz</a>
             </li>
             <li>
               <span>YouTube:</span>
-              <a href="https://www.youtube.com/@basamkg/videos" target="_blank" rel="noopener">@basamkg</a>
+              <a href="https://www.youtube.com/@basamkg/videos" target="_blank" rel="noopener noreferrer">@basamkg</a>
             </li>
             <li>
               <span>Instagram:</span>
-              <a href="https://instagram.com/basamkg" target="_blank" rel="noopener">@basamkg</a>
+              <a href="https://instagram.com/basamkg" target="_blank" rel="noopener noreferrer">@basamkg</a>
             </li>
           </ul>
         </article>
@@ -566,13 +504,21 @@
     <div class="container footer-inner">
       <div class="footer-left">
         <a href="#hero" class="logo">
-          <img src="assets/logo-star.png" alt="Логотип basaMk в виде звезды">
+          <img
+            src="assets/logo-star.png"
+            alt="Логотип basaMk в виде звезды"
+            width="52"
+            height="52"
+            loading="lazy"
+            decoding="async"
+          >
           <span class="logo-text">basaMk</span>
         </a>
         <p class="footer-copy">
           © <span id="year"></span> basaMk — маркетинг и дизайн в соцсетях.
         </p>
       </div>
+
       <nav class="footer-nav" aria-label="Навигация в футере">
         <a href="#cases" data-i18n="nav-cases-ru">Кейсы</a>
         <a href="#cases" class="hidden" data-i18n="nav-cases-en">Cases</a>
@@ -589,6 +535,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
